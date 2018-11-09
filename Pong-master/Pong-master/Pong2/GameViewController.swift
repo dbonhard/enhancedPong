@@ -10,6 +10,7 @@ import GameplayKit
 
 var currentGameType = gameType.medium
 var currentBallType = "trump"
+//var score = [0,0]
 
 
 class GameViewController: UIViewController {
@@ -57,12 +58,7 @@ class GameViewController: UIViewController {
         return true
     }
     
-//    func winner(score: Array<>){
-//        if score[1] > 11 || score[0] > 11{
-//            let menuVC = self.storyboard?.instantiateViewController(withIdentifier: "MenuVC") as! GameViewController
-//            
-//            
-//            self.navigationController?.pushViewController(menuVC, animated: true)
-//        }
-//    }
+
 }
+
+

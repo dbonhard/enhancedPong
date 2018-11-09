@@ -6,6 +6,16 @@
 import SpriteKit
 import GameplayKit
 
+//func winner(score: Array<Double>){
+//    if score[1] > 21 || score[0] > 21{
+//        let menuVC = UIViewController.storyboard?.instantiateViewController(withIdentifier: "MenuVC") as! GameViewController
+//
+//
+//        UIViewController.navigationController?.pushViewController(menuVC, animated: true)
+//    }
+//}
+
+
 class GameScene: SKScene {
    
     var ball = SKSpriteNode()
