@@ -38,7 +38,7 @@ class MenuVC : UIViewController {
     }
     
     @IBAction func Normal(_ sender: Any) {
-        setBallType(ball: "hillary")
+        setBallType(ball: "Ball")
     }
     
     func moveToGame(game : gameType) {
