@@ -9,7 +9,7 @@ import GameplayKit
 
 
 var currentGameType = gameType.medium
-var currentBallType = "hillary"
+var currentBallType = "trump"
 
 
 class GameViewController: UIViewController {
@@ -56,4 +56,13 @@ class GameViewController: UIViewController {
     override var prefersStatusBarHidden: Bool {
         return true
     }
+    
+//    func winner(score: Array<>){
+//        if score[1] > 11 || score[0] > 11{
+//            let menuVC = self.storyboard?.instantiateViewController(withIdentifier: "MenuVC") as! GameViewController
+//            
+//            
+//            self.navigationController?.pushViewController(menuVC, animated: true)
+//        }
+//    }
 }

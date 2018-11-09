@@ -70,6 +70,7 @@ class GameScene: SKScene {
         btmLbl.text = "\(score[0])"
         
 
+
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
