@@ -1,10 +1,7 @@
 //
 //  AppDelegate.swift
 //  Pong2
-//
-//  Created by Jared Davidson on 10/11/16.
-//  Copyright © 2016 Archetapp. All rights reserved.
-//
+
 
 import UIKit
 

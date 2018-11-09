@@ -1,10 +1,5 @@
-//
 //  MenuVC.swift
-//  Pong2
-//
-//  Created by Jared Davidson on 1/9/17.
-//  Copyright © 2017 Archetapp. All rights reserved.
-//
+
 
 import Foundation
 import UIKit

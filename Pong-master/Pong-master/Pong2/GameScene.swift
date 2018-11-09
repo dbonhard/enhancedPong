@@ -1,10 +1,7 @@
 //
 //  GameScene.swift
 //  Pong2
-//
-//  Created by Jared Davidson on 10/11/16.
-//  Copyright © 2016 Archetapp. All rights reserved.
-//
+
 
 import SpriteKit
 import GameplayKit
@@ -48,7 +45,7 @@ class GameScene: SKScene {
         score = [0,0]
         topLbl.text = "\(score[1])"
         btmLbl.text = "\(score[0])"
-        ball.physicsBody?.applyImpulse(CGVector(dx: 10 , dy: 10))
+        ball.physicsBody?.applyImpulse(CGVector(dx: 10 , dy: -10))
     }
 
     func addScore(playerWhoWon : SKSpriteNode){
@@ -58,7 +55,7 @@ class GameScene: SKScene {
         
         if playerWhoWon == main {
             score[0] += 1
-            ball.physicsBody?.applyImpulse(CGVector(dx: 10, dy: 10))
+            ball.physicsBody?.applyImpulse(CGVector(dx: 10, dy: -10))
         }
         else if playerWhoWon == enemy {
             score[1] += 1
@@ -121,13 +118,13 @@ class GameScene: SKScene {
         
         switch currentGameType {
         case .easy:
-            enemy.run(SKAction.moveTo(x: ball.position.x, duration: 1.3))
+            enemy.run(SKAction.moveTo(x: ball.position.x, duration: 1))
             break
         case .medium:
-            enemy.run(SKAction.moveTo(x: ball.position.x, duration: 1.0))
+            enemy.run(SKAction.moveTo(x: ball.position.x, duration: 0.7))
             break
         case .hard:
-            enemy.run(SKAction.moveTo(x: ball.position.x, duration: 0.7))
+            enemy.run(SKAction.moveTo(x: ball.position.x, duration: 0.5))
             break
         case .player2:
             
@@ -136,10 +133,10 @@ class GameScene: SKScene {
         
         
         
-        if ball.position.y <= main.position.y - 30 {
+        if ball.position.y <= main.position.y - 15 {
             addScore(playerWhoWon: enemy)
         }
-        else if ball.position.y >= enemy.position.y + 30 {
+        else if ball.position.y >= enemy.position.y + 15 {
             addScore(playerWhoWon: main)
         }
     }
