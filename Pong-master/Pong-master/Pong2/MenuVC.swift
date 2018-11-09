@@ -1,4 +1,6 @@
+
 //  MenuVC.swift
+//  Pong2
 
 
 import Foundation
@@ -10,6 +12,7 @@ enum gameType {
     case hard
     case player2
 }
+
 
 class MenuVC : UIViewController {
     
@@ -29,11 +32,25 @@ class MenuVC : UIViewController {
         moveToGame(game: .hard)
     }
     
+
+    @IBAction func Hillary(_ sender: Any) {
+        setBallType(ball: "hillary")
+    }
+    
+    @IBAction func Normal(_ sender: Any) {
+        setBallType(ball: "hillary")
+    }
+    
     func moveToGame(game : gameType) {
         let gameVC = self.storyboard?.instantiateViewController(withIdentifier: "gameVC") as! GameViewController
         
         currentGameType = game
 
         self.navigationController?.pushViewController(gameVC, animated: true)
+    }
+    
+    func setBallType(ball : String) {
+   
+        currentBallType = ball
     }
 }

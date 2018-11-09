@@ -44,14 +44,6 @@
                                     <action selector="Easy:" destination="j5z-9e-ade" eventType="touchUpInside" id="6pf-gO-237"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WoL-IO-QqM">
-                                <rect key="frame" x="160" y="355" width="55" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Medium"/>
-                                <connections>
-                                    <action selector="Medium:" destination="j5z-9e-ade" eventType="touchUpInside" id="MMR-Sg-CdI"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i4W-1l-rvt">
                                 <rect key="frame" x="160" y="115" width="55" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -71,6 +63,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1GQ-wH-hXV">
                                 <rect key="frame" x="130" y="531" width="114" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" notEnabled="YES"/>
+                                </accessibility>
                                 <state key="normal" title="Select Ball Type:"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dct-oM-MH2">
@@ -78,7 +73,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Hillary"/>
                                 <connections>
-                                    <action selector="Hard:" destination="j5z-9e-ade" eventType="touchUpInside" id="cLC-7d-he8"/>
+                                    <action selector="Hillary:" destination="j5z-9e-ade" eventType="touchUpInside" id="d36-C4-fXM"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="64I-44-S9I">
@@ -86,7 +81,15 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Normal"/>
                                 <connections>
-                                    <action selector="Hard:" destination="j5z-9e-ade" eventType="touchUpInside" id="fa2-4e-CwH"/>
+                                    <action selector="Normal:" destination="j5z-9e-ade" eventType="touchUpInside" id="wS7-9I-gb8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WoL-IO-QqM">
+                                <rect key="frame" x="160" y="353" width="55" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Medium"/>
+                                <connections>
+                                    <action selector="Medium:" destination="j5z-9e-ade" eventType="touchUpInside" id="MMR-Sg-CdI"/>
                                 </connections>
                             </button>
                         </subviews>

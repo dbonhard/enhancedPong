@@ -9,6 +9,7 @@ import GameplayKit
 
 
 var currentGameType = gameType.medium
+var currentBallType = "Ball"
 
 
 class GameViewController: UIViewController {
