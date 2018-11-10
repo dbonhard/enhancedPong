@@ -90,11 +90,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cOm-98-CZn" colorLabel="IBBuiltInLabel-Red">
-                                <rect key="frame" x="16" y="326" width="30" height="30"/>
+                                <rect key="frame" x="145" y="396" width="85" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="quit"/>
+                                <state key="normal" title="Leave Game">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
-                                    <action selector="quit:" destination="3se-qz-xqx" eventType="touchUpInside" id="pLn-82-F3P"/>
+                                    <action selector="quit:" destination="BV1-FR-VrT" eventType="touchUpInside" id="SSb-xo-Kqf"/>
                                 </connections>
                             </button>
                         </subviews>
