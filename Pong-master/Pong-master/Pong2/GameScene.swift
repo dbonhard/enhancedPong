@@ -48,7 +48,7 @@ class GameScene: SKScene {
         score = [0,0]
         topLbl.text = "\(score[1])"
         btmLbl.text = "\(score[0])"
-        ball.physicsBody?.applyImpulse(CGVector(dx: 10 , dy: -10))
+        ball.physicsBody?.applyImpulse(CGVector(dx: 15 , dy: -15))
         ball.texture = SKTexture(imageNamed: currentBallType)
         let oneRevolution = SKAction.rotate(byAngle: CGFloat(-M_PI*2), duration: 5.0)
         ball.run(SKAction.repeatForever(oneRevolution))
