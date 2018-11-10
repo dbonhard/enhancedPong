@@ -6,14 +6,7 @@
 import SpriteKit
 import GameplayKit
 
-//func winner(score: Array<Double>){
-//    if score[1] > 21 || score[0] > 21{
-//        let menuVC = UIViewController.storyboard?.instantiateViewController(withIdentifier: "MenuVC") as! GameViewController
-//
-//
-//        UIViewController.navigationController?.pushViewController(menuVC, animated: true)
-//    }
-//}
+
 
 
 class GameScene: SKScene {
@@ -79,7 +72,11 @@ class GameScene: SKScene {
         topLbl.text = "\(score[1])"
         btmLbl.text = "\(score[0])"
         
-
+        if score[1] > 20 || score[0] > 20{
+            let initialViewController = UIStoryboard(name: "Main", bundle:nil).instantiateInitialViewController() as! UIViewController
+            let appDelegate = (UIApplication.shared.delegate as! AppDelegate)
+            appDelegate.window?.rootViewController = initialViewController
+        }
 
     }
     

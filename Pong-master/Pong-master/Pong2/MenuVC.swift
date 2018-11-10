@@ -42,11 +42,9 @@ class MenuVC : UIViewController {
     }
     
     func moveToGame(game : gameType) {
-        let gameVC = self.storyboard?.instantiateViewController(withIdentifier: "gameVC") as! GameViewController
-        
-        currentGameType = game
-
-        self.navigationController?.pushViewController(gameVC, animated: true)
+        let gameScene = UIStoryboard(name: "Main", bundle:nil).instantiateViewController(withIdentifier:"gameVC") as UIViewController
+        let appDelegate = (UIApplication.shared.delegate as! AppDelegate)
+        appDelegate.window?.rootViewController = gameScene
     }
     
     func setBallType(ball : String) {

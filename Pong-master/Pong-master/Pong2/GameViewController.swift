@@ -10,7 +10,7 @@ import GameplayKit
 
 var currentGameType = gameType.medium
 var currentBallType = "trump"
-//var score = [0,0]
+
 
 
 class GameViewController: UIViewController {
