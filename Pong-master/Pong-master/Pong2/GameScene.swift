@@ -154,6 +154,13 @@ class GameScene: SKScene {
             addScore(playerWhoWon: main)
         }
     }
+    
+    @IBAction func quit(_ sender: Any) {
+        let initialViewController = UIStoryboard(name: "Main", bundle:nil).instantiateInitialViewController() as! UIViewController
+        let appDelegate = (UIApplication.shared.delegate as! AppDelegate)
+        appDelegate.window?.rootViewController = initialViewController
+    }
+    
 }
 
 
