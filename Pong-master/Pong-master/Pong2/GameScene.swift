@@ -5,11 +5,16 @@
 
 import SpriteKit
 import GameplayKit
+import GameKit
 
 
 
 
-class GameScene: SKScene {
+class GameScene: SKScene, GKGameCenterControllerDelegate {
+    func gameCenterViewControllerDidFinish(_ gameCenterViewController: GKGameCenterViewController) {
+        print("what the fuck is going on")
+    }
+    
    
     var ball = SKSpriteNode()
     var enemy = SKSpriteNode()
@@ -19,6 +24,8 @@ class GameScene: SKScene {
     var btmLbl = SKLabelNode()
     
     var score = [Int]()
+    
+    let LEADERBOARD_ID = "com.score.mygamename"
     
     override func didMove(to view: SKView) {
  
@@ -73,6 +80,16 @@ class GameScene: SKScene {
         btmLbl.text = "\(score[0])"
         
         if score[1] > 20 || score[0] > 20{
+            // Submit score to GC leaderboard
+            let bestScoreInt = GKScore(leaderboardIdentifier: LEADERBOARD_ID)
+            bestScoreInt.value = Int64(score[0]-score[1])
+            GKScore.report([bestScoreInt]) { (error) in
+                if error != nil {
+                    print(error!.localizedDescription)
+                } else {
+                    print("Best Score submitted to your Leaderboard!")
+                }
+            }
             let initialViewController = UIStoryboard(name: "Main", bundle:nil).instantiateInitialViewController() as! UIViewController
             let appDelegate = (UIApplication.shared.delegate as! AppDelegate)
             appDelegate.window?.rootViewController = initialViewController

@@ -19,6 +19,7 @@
 		AC02334D1DAD29F800FAFCE9 /* Pong2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC02334C1DAD29F800FAFCE9 /* Pong2UITests.swift */; };
 		AC4197481DCA560100A2FDF1 /* LLPIXEL3.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC4197471DCA560100A2FDF1 /* LLPIXEL3.ttf */; };
 		AC982FFD1E2451B1008DF40E /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC982FFC1E2451B1008DF40E /* MenuVC.swift */; };
+		B134CE6D219FA53C0042C57E /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B134CE6C219FA53C0042C57E /* GameKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		AC02334E1DAD29F800FAFCE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC4197471DCA560100A2FDF1 /* LLPIXEL3.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LLPIXEL3.ttf; sourceTree = "<group>"; };
 		AC982FFC1E2451B1008DF40E /* MenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
+		B134CE67219FA1990042C57E /* Pong2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pong2.entitlements; sourceTree = "<group>"; };
+		B134CE6C219FA53C0042C57E /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B134CE6D219FA53C0042C57E /* GameKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +95,7 @@
 				AC0233401DAD29F800FAFCE9 /* Pong2Tests */,
 				AC02334B1DAD29F800FAFCE9 /* Pong2UITests */,
 				AC0233241DAD29F800FAFCE9 /* Products */,
+				B134CE62219F9FFD0042C57E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +112,7 @@
 		AC0233251DAD29F800FAFCE9 /* Pong2 */ = {
 			isa = PBXGroup;
 			children = (
+				B134CE67219FA1990042C57E /* Pong2.entitlements */,
 				AC4197471DCA560100A2FDF1 /* LLPIXEL3.ttf */,
 				AC0233261DAD29F800FAFCE9 /* AppDelegate.swift */,
 				AC0233281DAD29F800FAFCE9 /* GameScene.sks */,
@@ -138,6 +144,14 @@
 				AC02334E1DAD29F800FAFCE9 /* Info.plist */,
 			);
 			path = Pong2UITests;
+			sourceTree = "<group>";
+		};
+		B134CE62219F9FFD0042C57E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B134CE6C219FA53C0042C57E /* GameKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,8 +222,19 @@
 				TargetAttributes = {
 					AC0233221DAD29F700FAFCE9 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = G4K3J435AS;
+						DevelopmentTeam = 247Q9TRPJP;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+							com.apple.GameCenter.iOS = {
+								enabled = 1;
+							};
+							com.apple.HealthKit = {
+								enabled = 0;
+							};
+						};
 					};
 					AC02333C1DAD29F800FAFCE9 = {
 						CreatedOnToolsVersion = 8.0;
@@ -453,10 +478,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = G4K3J435AS;
+				DEVELOPMENT_TEAM = 247Q9TRPJP;
 				INFOPLIST_FILE = Pong2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Archetapp.Pong2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Archetapp.ThumpTrump;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -466,10 +491,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = G4K3J435AS;
+				DEVELOPMENT_TEAM = 247Q9TRPJP;
 				INFOPLIST_FILE = Pong2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Archetapp.Pong2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Archetapp.ThumpTrump;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
