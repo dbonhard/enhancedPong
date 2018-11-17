@@ -147,10 +147,10 @@ class GameScene: SKScene {
         
         
         
-        if ball.position.y <= main.position.y - 15 {
+        if ball.position.y <= main.position.y - 10 {
             addScore(playerWhoWon: enemy)
         }
-        else if ball.position.y >= enemy.position.y + 15 {
+        else if ball.position.y >= enemy.position.y + 10 {
             addScore(playerWhoWon: main)
         }
     }
