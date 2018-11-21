@@ -114,10 +114,10 @@
             </objects>
             <point key="canvasLocation" x="-118" y="41"/>
         </scene>
-        <!--View Controller-->
+        <!--Win View Controller-->
         <scene sceneID="6Oo-bi-fpn">
             <objects>
-                <viewController id="KeC-3W-ATG" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="winVC" id="KeC-3W-ATG" customClass="winViewController" customModule="Pong2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Jqi-MD-Sqo"/>
                         <viewControllerLayoutGuide type="bottom" id="MRi-2v-jXR"/>
@@ -137,6 +137,9 @@
                                 <rect key="frame" x="138" y="318" width="99" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back To Home"/>
+                                <connections>
+                                    <action selector="winBackToMainVC:" destination="KeC-3W-ATG" eventType="touchUpInside" id="K6M-3S-Kvi"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -146,10 +149,10 @@
             </objects>
             <point key="canvasLocation" x="816.79999999999995" y="37.331334332833585"/>
         </scene>
-        <!--View Controller-->
+        <!--Lose View Controller-->
         <scene sceneID="oj3-dk-PvB">
             <objects>
-                <viewController id="sRC-kE-TZc" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="loseVC" id="sRC-kE-TZc" customClass="loseViewController" customModule="Pong2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2r6-uv-YOa"/>
                         <viewControllerLayoutGuide type="bottom" id="Tbe-W3-WXJ"/>
@@ -166,9 +169,12 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fg8-d8-lJ4">
-                                <rect key="frame" x="137" y="290" width="99" height="30"/>
+                                <rect key="frame" x="133" y="285" width="99" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back To Home"/>
+                                <connections>
+                                    <action selector="back:" destination="sRC-kE-TZc" eventType="touchUpInside" id="83I-x4-ws0"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

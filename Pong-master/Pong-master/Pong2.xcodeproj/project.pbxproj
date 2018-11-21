@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1580AA2E21A5E0C800848E2A /* winViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1580AA2D21A5E0C800848E2A /* winViewController.swift */; };
+		1580AA3021A5E15E00848E2A /* loseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1580AA2F21A5E15E00848E2A /* loseViewController.swift */; };
+		1580AA5621A5F39C00848E2A /* Chartboost.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1580AA3321A5F32D00848E2A /* Chartboost.framework */; };
+		1580AA5721A5F3CF00848E2A /* CHAMoatMobileAppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1580AA3221A5F32D00848E2A /* CHAMoatMobileAppKit.framework */; };
+		1580AA5921A5F67B00848E2A /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1580AA5821A5F67B00848E2A /* StoreKit.framework */; };
+		1580AA5B21A5F68A00848E2A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1580AA5A21A5F68A00848E2A /* Foundation.framework */; };
+		1580AA5D21A5F6AA00848E2A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1580AA5C21A5F6AA00848E2A /* CoreGraphics.framework */; };
+		1580AA5F21A5F6B700848E2A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1580AA5E21A5F6B700848E2A /* UIKit.framework */; };
+		1580AA6121A5F6C600848E2A /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1580AA6021A5F6C600848E2A /* WebKit.framework */; };
 		AC0233271DAD29F800FAFCE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0233261DAD29F800FAFCE9 /* AppDelegate.swift */; };
 		AC0233291DAD29F800FAFCE9 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = AC0233281DAD29F800FAFCE9 /* GameScene.sks */; };
 		AC02332B1DAD29F800FAFCE9 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = AC02332A1DAD29F800FAFCE9 /* Actions.sks */; };
@@ -23,6 +32,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		1580AA5421A5F32D00848E2A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1580AA3721A5F32D00848E2A /* ChartboostExampleApp.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DA93B6AD182B31BC00C21472;
+			remoteInfo = ChartboostExampleApp;
+		};
 		AC02333E1DAD29F800FAFCE9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AC02331B1DAD29F700FAFCE9 /* Project object */;
@@ -40,6 +56,40 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1580AA2D21A5E0C800848E2A /* winViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = winViewController.swift; sourceTree = "<group>"; };
+		1580AA2F21A5E15E00848E2A /* loseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loseViewController.swift; sourceTree = "<group>"; };
+		1580AA3221A5F32D00848E2A /* CHAMoatMobileAppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CHAMoatMobileAppKit.framework; sourceTree = "<group>"; };
+		1580AA3321A5F32D00848E2A /* Chartboost.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Chartboost.framework; sourceTree = "<group>"; };
+		1580AA3421A5F32D00848E2A /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
+		1580AA3521A5F32D00848E2A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		1580AA3721A5F32D00848E2A /* ChartboostExampleApp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = ChartboostExampleApp.xcodeproj; sourceTree = "<group>"; };
+		1580AA3B21A5F32D00848E2A /* Default-Landscape~ipad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad@2x.png"; sourceTree = "<group>"; };
+		1580AA3D21A5F32D00848E2A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1580AA3E21A5F32D00848E2A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1580AA3F21A5F32D00848E2A /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
+		1580AA4021A5F32D00848E2A /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
+		1580AA4121A5F32D00848E2A /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		1580AA4221A5F32D00848E2A /* ChartboostExampleApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ChartboostExampleApp-Info.plist"; sourceTree = "<group>"; };
+		1580AA4321A5F32D00848E2A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1580AA4421A5F32D00848E2A /* ChartboostDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChartboostDelegate.h; sourceTree = "<group>"; };
+		1580AA4521A5F32D00848E2A /* Chartboost-LogoH1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Chartboost-LogoH1.png"; sourceTree = "<group>"; };
+		1580AA4721A5F32D00848E2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1580AA4821A5F32D00848E2A /* Default~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default~iphone.png"; sourceTree = "<group>"; };
+		1580AA4921A5F32D00848E2A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		1580AA4A21A5F32D00848E2A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1580AA4B21A5F32D00848E2A /* Demo-Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Demo-Button.png"; sourceTree = "<group>"; };
+		1580AA4C21A5F32D00848E2A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1580AA4D21A5F32D00848E2A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1580AA4E21A5F32D00848E2A /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		1580AA4F21A5F32D00848E2A /* ChartboostExampleApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ChartboostExampleApp-Prefix.pch"; sourceTree = "<group>"; };
+		1580AA5021A5F32D00848E2A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		1580AA5121A5F32D00848E2A /* Default~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default~ipad.png"; sourceTree = "<group>"; };
+		1580AA5221A5F32D00848E2A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1580AA5821A5F67B00848E2A /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		1580AA5A21A5F68A00848E2A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1580AA5C21A5F6AA00848E2A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1580AA5E21A5F6B700848E2A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1580AA6021A5F6C600848E2A /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		AC0233231DAD29F800FAFCE9 /* Pong2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pong2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC0233261DAD29F800FAFCE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC0233281DAD29F800FAFCE9 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -67,6 +117,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1580AA6121A5F6C600848E2A /* WebKit.framework in Frameworks */,
+				1580AA5F21A5F6B700848E2A /* UIKit.framework in Frameworks */,
+				1580AA5D21A5F6AA00848E2A /* CoreGraphics.framework in Frameworks */,
+				1580AA5B21A5F68A00848E2A /* Foundation.framework in Frameworks */,
+				1580AA5921A5F67B00848E2A /* StoreKit.framework in Frameworks */,
+				1580AA5721A5F3CF00848E2A /* CHAMoatMobileAppKit.framework in Frameworks */,
+				1580AA5621A5F39C00848E2A /* Chartboost.framework in Frameworks */,
 				B134CE6D219FA53C0042C57E /* GameKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -88,6 +145,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1580AA3121A5F32D00848E2A /* Chartboost-iOS-7.3.0 */ = {
+			isa = PBXGroup;
+			children = (
+				1580AA3221A5F32D00848E2A /* CHAMoatMobileAppKit.framework */,
+				1580AA3321A5F32D00848E2A /* Chartboost.framework */,
+				1580AA3421A5F32D00848E2A /* CHANGELOG.md */,
+				1580AA3521A5F32D00848E2A /* README.md */,
+				1580AA3621A5F32D00848E2A /* ChartboostExample */,
+			);
+			name = "Chartboost-iOS-7.3.0";
+			path = "../../../Chartboost-iOS-7.3.0";
+			sourceTree = "<group>";
+		};
+		1580AA3621A5F32D00848E2A /* ChartboostExample */ = {
+			isa = PBXGroup;
+			children = (
+				1580AA3721A5F32D00848E2A /* ChartboostExampleApp.xcodeproj */,
+				1580AA3A21A5F32D00848E2A /* ChartboostExampleApp */,
+			);
+			path = ChartboostExample;
+			sourceTree = "<group>";
+		};
+		1580AA3821A5F32D00848E2A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1580AA5521A5F32D00848E2A /* ChartboostExampleApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1580AA3A21A5F32D00848E2A /* ChartboostExampleApp */ = {
+			isa = PBXGroup;
+			children = (
+				1580AA3B21A5F32D00848E2A /* Default-Landscape~ipad@2x.png */,
+				1580AA3C21A5F32D00848E2A /* InfoPlist.strings */,
+				1580AA3E21A5F32D00848E2A /* AppDelegate.h */,
+				1580AA3F21A5F32D00848E2A /* Default-Portrait@2x~ipad.png */,
+				1580AA4021A5F32D00848E2A /* Default-Landscape~ipad.png */,
+				1580AA4121A5F32D00848E2A /* Default@2x.png */,
+				1580AA4221A5F32D00848E2A /* ChartboostExampleApp-Info.plist */,
+				1580AA4321A5F32D00848E2A /* ViewController.m */,
+				1580AA4421A5F32D00848E2A /* ChartboostDelegate.h */,
+				1580AA4521A5F32D00848E2A /* Chartboost-LogoH1.png */,
+				1580AA4621A5F32D00848E2A /* Main.storyboard */,
+				1580AA4821A5F32D00848E2A /* Default~iphone.png */,
+				1580AA4921A5F32D00848E2A /* Default-568h@2x.png */,
+				1580AA4A21A5F32D00848E2A /* main.m */,
+				1580AA4B21A5F32D00848E2A /* Demo-Button.png */,
+				1580AA4C21A5F32D00848E2A /* Images.xcassets */,
+				1580AA4D21A5F32D00848E2A /* AppDelegate.m */,
+				1580AA4E21A5F32D00848E2A /* Launch Screen.storyboard */,
+				1580AA4F21A5F32D00848E2A /* ChartboostExampleApp-Prefix.pch */,
+				1580AA5021A5F32D00848E2A /* Default.png */,
+				1580AA5121A5F32D00848E2A /* Default~ipad.png */,
+				1580AA5221A5F32D00848E2A /* ViewController.h */,
+			);
+			path = ChartboostExampleApp;
+			sourceTree = "<group>";
+		};
 		AC02331A1DAD29F700FAFCE9 = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +233,8 @@
 				AC0233261DAD29F800FAFCE9 /* AppDelegate.swift */,
 				AC0233281DAD29F800FAFCE9 /* GameScene.sks */,
 				AC02332A1DAD29F800FAFCE9 /* Actions.sks */,
+				1580AA2D21A5E0C800848E2A /* winViewController.swift */,
+				1580AA2F21A5E15E00848E2A /* loseViewController.swift */,
 				AC02332C1DAD29F800FAFCE9 /* GameScene.swift */,
 				AC02332E1DAD29F800FAFCE9 /* GameViewController.swift */,
 				AC0233301DAD29F800FAFCE9 /* Main.storyboard */,
@@ -149,6 +267,12 @@
 		B134CE62219F9FFD0042C57E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1580AA6021A5F6C600848E2A /* WebKit.framework */,
+				1580AA5E21A5F6B700848E2A /* UIKit.framework */,
+				1580AA5C21A5F6AA00848E2A /* CoreGraphics.framework */,
+				1580AA5A21A5F68A00848E2A /* Foundation.framework */,
+				1580AA5821A5F67B00848E2A /* StoreKit.framework */,
+				1580AA3121A5F32D00848E2A /* Chartboost-iOS-7.3.0 */,
 				B134CE6C219FA53C0042C57E /* GameKit.framework */,
 			);
 			name = Frameworks;
@@ -261,6 +385,12 @@
 			mainGroup = AC02331A1DAD29F700FAFCE9;
 			productRefGroup = AC0233241DAD29F800FAFCE9 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 1580AA3821A5F32D00848E2A /* Products */;
+					ProjectRef = 1580AA3721A5F32D00848E2A /* ChartboostExampleApp.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				AC0233221DAD29F700FAFCE9 /* Pong2 */,
@@ -269,6 +399,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		1580AA5521A5F32D00848E2A /* ChartboostExampleApp.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = ChartboostExampleApp.app;
+			remoteRef = 1580AA5421A5F32D00848E2A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		AC0233211DAD29F700FAFCE9 /* Resources */ = {
@@ -305,6 +445,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1580AA2E21A5E0C800848E2A /* winViewController.swift in Sources */,
+				1580AA3021A5E15E00848E2A /* loseViewController.swift in Sources */,
 				AC02332D1DAD29F800FAFCE9 /* GameScene.swift in Sources */,
 				AC982FFD1E2451B1008DF40E /* MenuVC.swift in Sources */,
 				AC02332F1DAD29F800FAFCE9 /* GameViewController.swift in Sources */,
@@ -344,6 +486,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		1580AA3C21A5F32D00848E2A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1580AA3D21A5F32D00848E2A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1580AA4621A5F32D00848E2A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1580AA4721A5F32D00848E2A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		AC0233301DAD29F800FAFCE9 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -481,6 +639,7 @@
 				DEVELOPMENT_TEAM = 247Q9TRPJP;
 				INFOPLIST_FILE = Pong2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Archetapp.ThumpTrump;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -494,6 +653,7 @@
 				DEVELOPMENT_TEAM = 247Q9TRPJP;
 				INFOPLIST_FILE = Pong2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Archetapp.ThumpTrump;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
