@@ -56,7 +56,8 @@ class GameScene: SKScene, GKGameCenterControllerDelegate {
         topLbl.text = "\(score[1])"
         btmLbl.text = "\(score[0])"
         ball.run(SKAction.resize(byWidth:100, height:100, duration:0))
-        ball.run(SKAction.resize(byWidth:-100, height:-100, duration:2), completion: {() -> Void in self.ball.physicsBody?.applyImpulse(CGVector(dx: 15, dy: -15))})
+        ball.run(SKAction.resize(byWidth:-100, height:-100, duration:2), completion: {() -> Void in self.ball.physicsBody?.applyImpulse(CGVector(dx: 1500, dy: -1500))})
+//        ball.physicsBody?.velocity = CGVector(dx: 150, dy: 150)
         ball.texture = SKTexture(imageNamed: currentBallType)
         let oneRevolution = SKAction.rotate(byAngle: CGFloat(-M_PI*2), duration: 5.0)
         ball.run(SKAction.repeatForever(oneRevolution))
@@ -95,6 +96,8 @@ class GameScene: SKScene, GKGameCenterControllerDelegate {
                     print("Best Score submitted to your Leaderboard!")
                 }
             }
+            // Show interstitial at location HomeScreen. See Chartboost.h for available location options.
+//            Chartboost.showInterstitial(CBLocationHomeScreen)
 //            let initialViewController = UIStoryboard(name: "Main", bundle:nil).instantiateInitialViewController() as! UIViewController
 //            let appDelegate = (UIApplication.shared.delegate as! AppDelegate)
 //            appDelegate.window?.rootViewController = initialViewController
@@ -160,13 +163,13 @@ class GameScene: SKScene, GKGameCenterControllerDelegate {
         
         switch currentGameType {
         case .easy:
-            enemy.run(SKAction.moveTo(x: ball.position.x, duration: 1))
+            enemy.run(SKAction.moveTo(x: ball.position.x, duration: 0.5))
             break
         case .medium:
-            enemy.run(SKAction.moveTo(x: ball.position.x, duration: 0.7))
+            enemy.run(SKAction.moveTo(x: ball.position.x, duration: 0.35))
             break
         case .hard:
-            enemy.run(SKAction.moveTo(x: ball.position.x, duration: 0.5))
+            enemy.run(SKAction.moveTo(x: ball.position.x, duration: 0.15))
             break
         case .player2:
             
