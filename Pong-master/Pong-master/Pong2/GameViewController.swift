@@ -10,7 +10,7 @@ import GameplayKit
 
 var currentGameType = gameType.medium
 var currentBallType = "trump"
-
+var currentSpeed = 10
 
 
 class GameViewController: UIViewController {

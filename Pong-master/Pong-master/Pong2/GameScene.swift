@@ -56,7 +56,7 @@ class GameScene: SKScene, GKGameCenterControllerDelegate {
         topLbl.text = "\(score[1])"
         btmLbl.text = "\(score[0])"
         ball.run(SKAction.resize(byWidth:100, height:100, duration:0))
-        ball.run(SKAction.resize(byWidth:-100, height:-100, duration:2), completion: {() -> Void in self.ball.physicsBody?.applyImpulse(CGVector(dx: 1500, dy: -1500))})
+        ball.run(SKAction.resize(byWidth:-100, height:-100, duration:2), completion: {() -> Void in self.ball.physicsBody?.applyImpulse(CGVector(dx: currentSpeed, dy: -currentSpeed))})
 //        ball.physicsBody?.velocity = CGVector(dx: 150, dy: 150)
         ball.texture = SKTexture(imageNamed: currentBallType)
         let oneRevolution = SKAction.rotate(byAngle: CGFloat(-M_PI*2), duration: 5.0)
@@ -74,12 +74,12 @@ class GameScene: SKScene, GKGameCenterControllerDelegate {
         
         if playerWhoWon == main {
             score[0] += 1
-            ball.physicsBody?.applyImpulse(CGVector(dx: -15, dy: -15))
+            ball.physicsBody?.applyImpulse(CGVector(dx: -currentSpeed, dy: -currentSpeed))
             
         }
         else if playerWhoWon == enemy {
             score[1] += 1
-            ball.physicsBody?.applyImpulse(CGVector(dx: 15, dy: -15))
+            ball.physicsBody?.applyImpulse(CGVector(dx: currentSpeed, dy: -currentSpeed))
         }
         
         topLbl.text = "\(score[1])"
@@ -101,9 +101,16 @@ class GameScene: SKScene, GKGameCenterControllerDelegate {
 //            let initialViewController = UIStoryboard(name: "Main", bundle:nil).instantiateInitialViewController() as! UIViewController
 //            let appDelegate = (UIApplication.shared.delegate as! AppDelegate)
 //            appDelegate.window?.rootViewController = initialViewController
-            let initialViewController = UIStoryboard(name: "Main", bundle:nil).instantiateViewController(withIdentifier:"winVC") as! UIViewController
+            if score[0] > 10 {
+                let initialViewController = UIStoryboard(name: "Main", bundle:nil).instantiateViewController(withIdentifier:"winVC") as! UIViewController
+                    let appDelegate = (UIApplication.shared.delegate as! AppDelegate)
+                    appDelegate.window?.rootViewController = initialViewController
+            }
+            if score[1] > 10 {
+                let initialViewController = UIStoryboard(name: "Main", bundle:nil).instantiateViewController(withIdentifier:"loseVC") as! UIViewController
                 let appDelegate = (UIApplication.shared.delegate as! AppDelegate)
                 appDelegate.window?.rootViewController = initialViewController
+            }
         }
 
     }
@@ -166,13 +173,18 @@ class GameScene: SKScene, GKGameCenterControllerDelegate {
             enemy.run(SKAction.moveTo(x: ball.position.x, duration: 0.5))
             break
         case .medium:
-            enemy.run(SKAction.moveTo(x: ball.position.x, duration: 0.35))
+            enemy.run(SKAction.moveTo(x: ball.position.x, duration: 0.30))
             break
         case .hard:
-            enemy.run(SKAction.moveTo(x: ball.position.x, duration: 0.15))
+            enemy.run(SKAction.moveTo(x: ball.position.x, duration: 0.20))
+            break
+        case .expert:
+            enemy.run(SKAction.moveTo(x: ball.position.x, duration: 0.10))
+            break
+        case .sodomy:
+            enemy.run(SKAction.moveTo(x: ball.position.x, duration: 0.05))
             break
         case .player2:
-            
             break
         }
         

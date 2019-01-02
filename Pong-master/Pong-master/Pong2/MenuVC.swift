@@ -11,8 +11,18 @@ enum gameType {
     case easy
     case medium
     case hard
+    case expert
+    case sodomy
     case player2
 }
+
+var EASY = 10
+var MEDIUM = 15
+var HARD = 20
+var EXPERT = 25
+var SODOMY = 30
+
+
 
 
 class MenuVC : UIViewController, GKGameCenterControllerDelegate {
@@ -25,6 +35,7 @@ class MenuVC : UIViewController, GKGameCenterControllerDelegate {
     var gcDefaultLeaderBoard = String() // Check the default leaderboardID
     
     var score = 0
+ 
     
     // IMPORTANT: replace the red string below with your own Leaderboard ID (the one you've set in iTunes Connect)
     let LEADERBOARD_ID = "com.Archetapp.ThumpTrump"
@@ -66,22 +77,31 @@ class MenuVC : UIViewController, GKGameCenterControllerDelegate {
         present(gcVC, animated: true, completion: nil)
     }
     
-    @IBAction func Player2(_ sender: Any) {
-        moveToGame(game: .player2)
-    }
+//    @IBAction func Player2(_ sender: Any) {
+//        moveToGame(game: .player2)
+//    }
     
     @IBAction func Easy(_ sender: Any) {
-        moveToGame(game: .easy)
-    }
-    @IBAction func Medium(_ sender: Any) {
-        moveToGame(game: .medium)
+        moveToGame(game: .easy, speed: EASY)
         
     }
-    @IBAction func Hard(_ sender: Any) {
-        moveToGame(game: .hard)
+    @IBAction func Medium(_ sender: Any) {
+        moveToGame(game: .medium, speed: MEDIUM)
     }
     
-
+    @IBAction func Hard(_ sender: Any) {
+        moveToGame(game: .hard, speed: HARD)
+    }
+    
+    @IBAction func Expert(_ sender: Any) {
+        moveToGame(game: .expert, speed: EXPERT)
+    }
+    
+    @IBAction func Sodomy(_ sender: Any) {
+        moveToGame(game: .sodomy, speed: SODOMY)
+    }
+    
+    
     @IBAction func Hillary(_ sender: Any) {
         setBallType(ball: "hillary")
     }
@@ -90,7 +110,9 @@ class MenuVC : UIViewController, GKGameCenterControllerDelegate {
         setBallType(ball: "Ball")
     }
     
-    func moveToGame(game : gameType) {
+    func moveToGame(game : gameType, speed: Int) {
+        currentGameType = game
+        currentSpeed = speed
         let gameScene = UIStoryboard(name: "Main", bundle:nil).instantiateViewController(withIdentifier:"gameVC") as UIViewController
         let appDelegate = (UIApplication.shared.delegate as! AppDelegate)
         appDelegate.window?.rootViewController = gameScene
